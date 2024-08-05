@@ -444,6 +444,7 @@ reflect-cpp supports the following containers from the C++ standard library:
 
 - `std::array`
 - `std::deque`
+- `std::filesystem::path`
 - `std::forward_list`
 - `std::map`
 - `std::multimap`
@@ -468,15 +469,19 @@ reflect-cpp supports the following containers from the C++ standard library:
 
 In addition, it supports the following custom containers:
 
+- `rfl::Binary`: Used to express numbers in binary format.
 - `rfl::Box`: Similar to `std::unique_ptr`, but (almost) guaranteed to never be null.
 - `rfl::Bytestring`: An alias for `std::basic_string<std::byte>`. Supported by BSON, CBOR, flexbuffers and msgpack. 
 - `rfl::Generic`: A catch-all type that can represent (almost) anything.
+- `rfl::Hex`: Used to express numbers in hex format.
 - `rfl::Literal`: An explicitly enumerated string.
 - `rfl::NamedTuple`: Similar to `std::tuple`, but with named fields that can be retrieved via their name at compile time.
 - `rfl::Object`: A map-like type representing a object with field names that are unknown at compile time.
+- `rfl::Oct`: Used to express numbers in octal format.
 - `rfl::Ref`: Similar to `std::shared_ptr`, but (almost) guaranteed to never be null.
 - `rfl::Result`: Allows for exception-free programming.
 - `rfl::TaggedUnion`: Similar to `std::variant`, but with explicit tags that make parsing more efficient.
+- `rfl::Tuple`: An alternative to `std::tuple` that compiles considerably faster.
 - `rfl::Validator`: Allows for automatic input validation.
 - `rfl::Variant`: An alternative to `std::variant` that compiles considerably faster.
 

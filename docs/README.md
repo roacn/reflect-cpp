@@ -34,6 +34,8 @@
 
 1.15) [rfl::Bytestring](https://github.com/getml/reflect-cpp/blob/main/docs/bytestring.md) - Describes how reflect-cpp handles binary strings for formats that support them. 
 
+1.16) [rfl::Binary, rfl::Hex and rfl::Oct](https://github.com/getml/reflect-cpp/blob/main/docs/number_systems.md)- For expressing numbers in different formats. 
+
 ## 2) Validation
 
 2.1) [Regex patterns](https://github.com/getml/reflect-cpp/blob/main/docs/patterns.md) - For requiring that strings follow used-defined regex patterns.
@@ -68,7 +70,9 @@
 
 5.3) [rfl::NamedTuple](https://github.com/getml/reflect-cpp/blob/main/docs/named_tuple.md) - For structural typing.
 
-5.4) [rfl::to_view](https://github.com/getml/reflect-cpp/blob/main/docs/to_view.md) - For accessing fields of a struct by index or name.
+5.4) [rfl::Tuple](https://github.com/getml/reflect-cpp/blob/main/docs/rfl_tuple.md) - An alternative to `std::tuple` that compiles more quickly.
+
+5.5) [rfl::to_view](https://github.com/getml/reflect-cpp/blob/main/docs/to_view.md) - For accessing fields of a struct by index or name.
 
 ## 6) Supported formats
 
